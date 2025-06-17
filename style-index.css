@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #94603d;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #6b2d04, #8f6d52, #66442d);
+  text-align: center;
+  padding: 30px 10px;
+}
+
+nav {
+  background-color: #613416;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: #f5d0aa;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffd9b1;
+}
+
+main {
+  padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+.Agricultura-Familiar {
+  background: #5b331d;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  color: #fff4e6;
+}
+
+.Agricultura-Familiar h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Agricultura-Familiar p,
+.Agricultura-Familiar ul {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #66361f;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .Agricultura-Familiar h3 {
+    font-size: 20px;
+  }
+}
